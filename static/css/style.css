@@ -1,0 +1,28 @@
+body {
+    background-image: url('/static/img/bgimg.gif');
+    background-size: cover;  
+    background-attachment: fixed;  
+    height: 80vh; 
+}
+
+h1 {
+    color: #d9d7cd; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .hero-section {
+    background-image: url('/static/img/bgimg.gif');
+    background-size: cover;
+    color: white;
+    padding: 80px 0;
+    position: relative;
+}
+
+.hero-section .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 40px;
+}

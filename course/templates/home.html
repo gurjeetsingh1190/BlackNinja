@@ -1,0 +1,54 @@
+{% load static %}
+<html>
+<head>
+    <title>College Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">BANARSIDAS CHANDIWALA </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/course/">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/fees/">Fees</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact/">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        {% block content %}{% endblock %}
+    </div>
+
+    <marquee style="
+    color:rgb(251, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0 0 5pxrgb(3, 16, 155), 0 0 10pxrgb(6, 32, 88);">
+    GGSIPU notification for Programme : BCA Admission for Batch 2024-25 is through GGSIPU-CET and CUET and 
+    For MCA is through NIMCET and GGSIPU - CET
+</marquee>
+
+<div class = "container">
+<h1> <br>WELCOME TO BCIIT </h1>
+</div> 
+
+<div class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-7"><br>Banarsidas Chandiwala Institute of Information Technology (BCIIT) was established in 1999 to run Master of Computer Application (MCA) programme. The Institute is affiliated with Guru Gobind Singh Indraprastha University( GGSIPU), Delhi for awarding the degree and is approved by the All India Council of Technical Education (AICTE), Ministry of HRD, Government of India.The Institute is established under the aegis of Sri Banarsidas Chandiwala Sewa Smarak Trust Society(SBCSSTS), a charitable Society working in the field of health and education since 1952.
+</h1>
+    </div>
+</div>
+
+
+</body>
+</html>

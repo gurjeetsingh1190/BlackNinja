@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="mb-4">Fee Structure</h2>
+<table class="table table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>Course</th>
+            <th>Duration</th>
+            <th>Annual Fee</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for fee in fees %}
+        <tr>
+            <td>{{ fee.course }}</td>
+            <td>{{ fee.duration }}</td>
+            <td>{{ fee.amount }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
